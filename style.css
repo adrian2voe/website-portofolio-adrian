@@ -1,26 +1,61 @@
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
   font-family:'Poppins',sans-serif;
-  background:#f5f3ff;
-  min-height:100vh;
-  padding:40px 15px;
-  color:#1f2937;
+  background:#ede9fe;
+  color:#1f2937
 }
 
+/* NAVBAR */
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#7c3aed;
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  box-shadow:0 8px 20px rgba(0,0,0,.25)
+}
+
+.nav-brand{
+  font-size:20px;
+  font-weight:700
+}
+
+.nav-menu a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:22px;
+  font-weight:500;
+  transition:.25s
+}
+
+.nav-menu a:hover{opacity:.75}
+
+.nav-menu .btn{
+  background:#a78bfa;
+  padding:8px 16px;
+  border-radius:20px
+}
+
+/* LAYOUT */
 .wrapper{
   max-width:1000px;
-  margin:auto;
-  background:#ffffff;
-  border-radius:18px;
+  margin:40px auto;
+  background:#fff;
+  border-radius:20px;
   overflow:hidden;
-  box-shadow:0 20px 40px rgba(0,0,0,.15)
+  box-shadow:0 25px 50px rgba(0,0,0,.15)
 }
 
 header{
   background:#7c3aed;
   color:#fff;
-  padding:50px;
-  text-align:center
+  text-align:center;
+  padding:60px 20px
 }
 
 .avatar{
@@ -36,18 +71,16 @@ header{
   font-weight:700
 }
 
-header h1{font-size:38px;margin-bottom:10px}
+header h1{font-size:36px;margin-bottom:10px}
 header p{opacity:.9}
 
 main{padding:50px}
-section{margin-bottom:40px}
+section{margin-bottom:45px}
 
 h2{
-  font-size:20px;
-  margin-bottom:20px;
   color:#7c3aed;
-  border-bottom:2px solid #ddd6fe;
-  padding-bottom:8px
+  margin-bottom:18px;
+  font-size:22px
 }
 
 p{line-height:1.8}
@@ -58,24 +91,25 @@ p{line-height:1.8}
   gap:30px
 }
 
+.box{
+  background:#f5f3ff;
+  padding:30px;
+  border-radius:16px
+}
+
 ul{list-style:none}
 li{margin-bottom:12px}
 
-.box{
-  background:#f5f3ff;
-  padding:25px;
-  border-radius:14px
-}
-
 footer{
-  text-align:center;
-  padding:20px;
   background:#ede9fe;
   color:#6d28d9;
+  text-align:center;
+  padding:20px;
   font-size:14px
 }
 
 @media(max-width:768px){
   .grid{grid-template-columns:1fr}
+  .nav-menu a{margin-left:12px}
   main{padding:30px}
 }
