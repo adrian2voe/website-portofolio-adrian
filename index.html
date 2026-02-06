@@ -7,107 +7,140 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(120deg, #4f46e5, #06b6d4);
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #6366f1, #22d3ee);
       min-height: 100vh;
-      padding: 40px 20px;
+      padding: 30px 15px;
     }
-    .card {
-      max-width: 900px;
+    .wrapper {
+      max-width: 1000px;
       margin: auto;
       background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      border-radius: 20px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.18);
       overflow: hidden;
     }
     header {
-      background: linear-gradient(120deg, #4f46e5, #06b6d4);
-      color: white;
-      padding: 40px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 45px;
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      color: #fff;
     }
-    header h1 { font-size: 36px; margin-bottom: 10px; }
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    header h1 { font-size: 36px; margin-bottom: 6px; }
     header p { opacity: 0.95; }
-    main { padding: 40px; }
-    section { margin-bottom: 30px; }
+    main { padding: 45px; }
+    section { margin-bottom: 35px; }
     h2 {
       font-size: 22px;
-      margin-bottom: 15px;
+      margin-bottom: 16px;
       color: #4f46e5;
-      border-left: 5px solid #06b6d4;
-      padding-left: 10px;
+      position: relative;
+      padding-left: 14px;
     }
+    h2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 6px;
+      height: 22px;
+      background: linear-gradient(#4f46e5, #22d3ee);
+      border-radius: 4px;
+    }
+    p { line-height: 1.7; }
     ul { padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    .info-grid {
+    li { margin-bottom: 8px; }
+    .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    .box {
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 25px;
+      border: 1px solid #e5e7eb;
     }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 22px;
       font-size: 14px;
-      color: #666;
+      color: #64748b;
       background: #f1f5f9;
     }
-    @media (max-width: 700px) {
-      .info-grid { grid-template-columns: 1fr; }
-      main { padding: 25px; }
-      header { padding: 30px 20px; }
+    @media (max-width: 768px) {
+      header { flex-direction: column; text-align: center; }
+      .grid { grid-template-columns: 1fr; }
+      main { padding: 30px; }
     }
   </style>
 </head>
 <body>
 
-  <div class="card">
+  <div class="wrapper">
     <header>
-      <h1>Adrian Davin</h1>
-      <p>Curriculum Vitae • Informasi Pribadi</p>
-      <p>Lubang Buaya • 081234567891</p>
-      <p>adrian2305.sma2@sma.prestasiprima.sch.id</p>
+      <div class="avatar">AD</div>
+      <div>
+        <h1>Adrian Davin</h1>
+        <p>Pelajar SMA • Jurusan IPA</p>
+        <p>Lubang Buaya • 081234567891</p>
+        <p>adrian2305.sma2@sma.prestasiprima.sch.id</p>
+      </div>
     </header>
 
     <main>
       <section>
         <h2>Profil Singkat</h2>
         <p>
-          Adrian Davin merupakan pelajar SMA jurusan IPA yang memiliki ketertarikan dalam pengembangan diri,
-          penggunaan teknologi dasar, serta kegiatan akademik dan non-akademik. CV ini dibuat sebagai dokumen
-          informatif untuk memperkenalkan latar belakang pendidikan dan kemampuan dasar.
+          Adrian Davin merupakan pelajar Sekolah Menengah Atas jurusan IPA di SMA Prestasi Prima.
+          Memiliki ketertarikan pada penggunaan teknologi dasar, pembelajaran mandiri, serta
+          kegiatan akademik dan non-akademik sebagai bagian dari pengembangan diri.
         </p>
       </section>
 
-      <section class="info-grid">
-        <div>
+      <section class="grid">
+        <div class="box">
           <h2>Data Pribadi</h2>
           <ul>
-            <li>Nama: Adrian Davin</li>
-            <li>Domisili: Lubang Buaya</li>
-            <li>Email: adrian2305.sma2@sma.prestasiprima.sch.id</li>
-            <li>Telepon: 081234567891</li>
+            <li><strong>Nama:</strong> Adrian Davin</li>
+            <li><strong>Domisili:</strong> Lubang Buaya</li>
+            <li><strong>Email:</strong> adrian2305.sma2@sma.prestasiprima.sch.id</li>
+            <li><strong>Telepon:</strong> 081234567891</li>
           </ul>
         </div>
-        <div>
+        <div class="box">
           <h2>Pendidikan</h2>
           <ul>
-            <li>SMA Prestasi Prima</li>
-            <li>Jurusan: IPA</li>
+            <li><strong>Sekolah:</strong> SMA Prestasi Prima</li>
+            <li><strong>Jurusan:</strong> IPA</li>
           </ul>
         </div>
       </section>
 
-      <section class="info-grid">
-        <div>
+      <section class="grid">
+        <div class="box">
           <h2>Keahlian</h2>
           <ul>
             <li>Mengoperasikan komputer dasar</li>
             <li>Microsoft Word & Google Docs</li>
-            <li>Pengetikan dokumen</li>
+            <li>Pengetikan dan pengolahan dokumen</li>
             <li>Komunikasi dasar</li>
           </ul>
         </div>
-        <div>
+        <div class="box">
           <h2>Hobi</h2>
           <ul>
             <li>Mendengarkan musik</li>
@@ -119,7 +152,7 @@
     </main>
 
     <footer>
-      © 2026 Adrian Davin
+      © 2026 Adrian Davin • CV Informasi Pribadi
     </footer>
   </div>
 
