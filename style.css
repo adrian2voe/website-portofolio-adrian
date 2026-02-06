@@ -1,133 +1,81 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f5f3ff;
+  min-height:100vh;
+  padding:40px 15px;
+  color:#1f2937;
 }
 
-body {
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  background: #7c3aed; /* UNGU FULL */
-  min-height: 100vh;
-  padding: 40px 15px;
-  color: #1f2937;
+.wrapper{
+  max-width:1000px;
+  margin:auto;
+  background:#ffffff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 20px 40px rgba(0,0,0,.15)
 }
 
-.wrapper {
-  max-width: 1100px;
-  margin: auto;
-  background: #f5f3ff; /* ungu muda */
-  border-radius: 22px;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
-  overflow: hidden;
+header{
+  background:#7c3aed;
+  color:#fff;
+  padding:50px;
+  text-align:center
 }
 
-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 30px;
-  padding: 50px;
-  background: #8b5cf6; /* UNGU */
+.avatar{
+  width:120px;
+  height:120px;
+  margin:0 auto 20px;
+  border-radius:50%;
+  background:#a78bfa;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+  font-weight:700
 }
 
-.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 20px;
-  background: #7c3aed; /* UNGU */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 42px;
-  font-weight: 700;
-  color: #ffffff;
+header h1{font-size:38px;margin-bottom:10px}
+header p{opacity:.9}
+
+main{padding:50px}
+section{margin-bottom:40px}
+
+h2{
+  font-size:20px;
+  margin-bottom:20px;
+  color:#7c3aed;
+  border-bottom:2px solid #ddd6fe;
+  padding-bottom:8px
 }
 
-header h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: #ffffff;
+p{line-height:1.8}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px
 }
 
-header p {
-  color: #ede9fe;
+ul{list-style:none}
+li{margin-bottom:12px}
+
+.box{
+  background:#f5f3ff;
+  padding:25px;
+  border-radius:14px
 }
 
-main {
-  padding: 50px;
+footer{
+  text-align:center;
+  padding:20px;
+  background:#ede9fe;
+  color:#6d28d9;
+  font-size:14px
 }
 
-section {
-  margin-bottom: 45px;
-}
-
-h2 {
-  font-size: 20px;
-  margin-bottom: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #6d28d9; /* ungu tua */
-}
-
-p {
-  line-height: 1.8;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-li {
-  margin-bottom: 12px;
-  padding-left: 18px;
-  position: relative;
-}
-
-li::before {
-  content: '▹';
-  position: absolute;
-  left: 0;
-  color: #7c3aed;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
-
-.box {
-  background: #ede9fe; /* ungu sangat muda */
-  border: 2px solid #8b5cf6;
-  border-radius: 18px;
-  padding: 30px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 30px rgba(124,58,237,0.35);
-}
-
-footer {
-  text-align: center;
-  padding: 26px;
-  font-size: 14px;
-  color: #ffffff;
-  background: #7c3aed;
-}
-
-@media (max-width: 768px) {
-  header {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  main {
-    padding: 30px;
-  }
+@media(max-width:768px){
+  .grid{grid-template-columns:1fr}
+  main{padding:30px}
 }
