@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  background: #facc15; /* KUNING FULL */
+  background: #7c3aed; /* UNGU FULL */
   min-height: 100vh;
   padding: 40px 15px;
   color: #1f2937;
@@ -15,7 +15,7 @@ body {
 .wrapper {
   max-width: 1100px;
   margin: auto;
-  background: #fff7ed; /* kuning muda */
+  background: #f5f3ff; /* ungu muda */
   border-radius: 22px;
   box-shadow: 0 30px 60px rgba(0,0,0,0.25);
   overflow: hidden;
@@ -26,30 +26,30 @@ header {
   grid-template-columns: auto 1fr;
   gap: 30px;
   padding: 50px;
-  background: #fde047; /* KUNING */
+  background: #8b5cf6; /* UNGU */
 }
 
 .avatar {
   width: 120px;
   height: 120px;
   border-radius: 20px;
-  background: #facc15; /* KUNING */
+  background: #7c3aed; /* UNGU */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 42px;
   font-weight: 700;
-  color: #1f2937;
+  color: #ffffff;
 }
 
 header h1 {
   font-size: 40px;
   margin-bottom: 10px;
-  color: #1f2937;
+  color: #ffffff;
 }
 
 header p {
-  color: #374151;
+  color: #ede9fe;
 }
 
 main {
@@ -65,7 +65,7 @@ h2 {
   margin-bottom: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #92400e; /* coklat-kuning */
+  color: #6d28d9; /* ungu tua */
 }
 
 p {
@@ -87,7 +87,7 @@ li::before {
   content: '▹';
   position: absolute;
   left: 0;
-  color: #d97706; /* kuning tua */
+  color: #7c3aed;
 }
 
 .grid {
@@ -97,8 +97,8 @@ li::before {
 }
 
 .box {
-  background: #fffbeb; /* kuning sangat muda */
-  border: 2px solid #facc15;
+  background: #ede9fe; /* ungu sangat muda */
+  border: 2px solid #8b5cf6;
   border-radius: 18px;
   padding: 30px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -106,15 +106,15 @@ li::before {
 
 .box:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 30px rgba(202,138,4,0.35);
+  box-shadow: 0 15px 30px rgba(124,58,237,0.35);
 }
 
 footer {
   text-align: center;
   padding: 26px;
   font-size: 14px;
-  color: #78350f;
-  background: #fde047;
+  color: #ffffff;
+  background: #7c3aed;
 }
 
 @media (max-width: 768px) {
