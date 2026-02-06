@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Profil Adrian Davin</title>
+  <title>Profil Adrian Davin</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo">Adrian Davin</div>
-    <div class="menu">
+    <div class="nav-brand">Adrian Davin</div>
+    <div class="nav-menu">
       <a href="#profil">Profil</a>
       <a href="#tentang">Tentang</a>
       <a href="#keahlian">Keahlian</a>
@@ -20,53 +20,62 @@
     </div>
   </nav>
 
-  <!-- PROFIL -->
-  <section id="profil" class="hero">
-    <div class="avatar">AD</div>
-    <h1>Adrian Davin</h1>
-    <p>Pelajar SMA Prestasi Prima • Jurusan IPA</p>
-  </section>
+  <div class="wrapper">
 
-  <!-- TENTANG -->
-  <section id="tentang" class="content">
-    <h2>Tentang Saya</h2>
-    <p>
-      Saya adalah pelajar SMA Prestasi Prima jurusan IPA.
-      Website ini dibuat sebagai profil pribadi dan latihan membuat website.
-    </p>
-  </section>
+    <!-- HEADER / PROFIL -->
+    <header id="profil">
+      <div class="avatar">AD</div>
+      <h1>Adrian Davin</h1>
+      <p>Pelajar SMA Prestasi Prima • Jurusan IPA</p>
+    </header>
 
-  <!-- KEAHLIAN -->
-  <section id="keahlian" class="content">
-    <h2>Keahlian</h2>
-    <ul>
-      <li>Dasar HTML & CSS</li>
-      <li>Mengoperasikan komputer</li>
-      <li>Microsoft Word</li>
-      <li>Komunikasi dasar</li>
-    </ul>
-  </section>
+    <main>
 
-  <!-- PENGALAMAN -->
-  <section id="pengalaman" class="content">
-    <h2>Pengalaman</h2>
-    <ul>
-      <li>Membuat website CV sederhana</li>
-      <li>Tugas sekolah berbasis komputer</li>
-    </ul>
-  </section>
+      <!-- TENTANG -->
+      <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya adalah pelajar SMA Prestasi Prima jurusan IPA.
+          Website ini dibuat sebagai profil pribadi dan latihan membuat website.
+        </p>
+      </section>
 
-  <!-- KONTAK -->
-  <section id="kontak" class="content">
-    <h2>Kontak</h2>
-    <p>Alamat: Lubang Buaya</p>
-    <p>Email: adrian2305.sma2@sma.prestasiprima.sch.id</p>
-    <p>Telepon: 081234567891</p>
-  </section>
+      <!-- GRID -->
+      <section class="grid">
+        <div class="box" id="keahlian">
+          <h2>Keahlian</h2>
+          <ul>
+            <li>Dasar HTML & CSS</li>
+            <li>Mengoperasikan komputer</li>
+            <li>Microsoft Word</li>
+            <li>Komunikasi dasar</li>
+          </ul>
+        </div>
 
-  <footer>
-    © 2026 Adrian Davin
-  </footer>
+        <div class="box" id="pengalaman">
+          <h2>Pengalaman</h2>
+          <ul>
+            <li>Membuat website CV sederhana</li>
+            <li>Tugas sekolah berbasis komputer</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- KONTAK -->
+      <section id="kontak" class="box">
+        <h2>Kontak</h2>
+        <p>Alamat: Lubang Buaya</p>
+        <p>Email: adrian2305.sma2@sma.prestasiprima.sch.id</p>
+        <p>Telepon: 081234567891</p>
+      </section>
+
+    </main>
+
+    <footer>
+      © 2026 Adrian Davin
+    </footer>
+
+  </div>
 
 </body>
 </html>
